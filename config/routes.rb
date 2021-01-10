@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home', to: 'memos#index'
+  root to: 'home#index'
 
   namespace :api, format: 'json' do
     resources :memos, only: [:index, :create]
